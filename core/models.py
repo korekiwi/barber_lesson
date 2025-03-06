@@ -1,7 +1,6 @@
 from django.db import models
 
 
-# Класс для записи на стрижку
 class Visit(models.Model):
     STATUS_CHOICES = [
         (0, 'Не подтверждена'),

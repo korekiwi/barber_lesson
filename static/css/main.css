@@ -1,0 +1,79 @@
+* {
+    background-color: rgb(244, 244, 244);
+}
+
+
+.masters {
+    margin: 50px 0px;
+    text-align: center;
+}
+
+.services {
+    margin: 70px 0px;
+    text-align: center;
+}
+
+.hero_div {
+    padding: 100px 0px;
+    text-align: center;
+    background-color: rgb(38, 93, 23);
+    color: white;
+    font-weight: bolder;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+
+.master_gallery {
+    margin: 10px auto;
+    display: flex;
+    width: 1000px;
+    justify-content: space-around;
+}
+
+.master_card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid green;
+    border-radius: 10px;
+    width: 200px;
+    height: 300px;
+}
+
+.master_card img {
+    margin: 5px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+.bold {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 3px;
+}
+
+.service_gallery {
+    margin: 10px auto;
+    display: flex;
+    width: 1000px;
+    justify-content: space-between;
+}
+
+.service_card {
+    border: 1px solid green;
+    text-align: center;
+    padding: 20px;
+}
+
+.service_description {
+    font-style: italic;
+    font-size: 16px;
+}
+
+.service_price {
+    font-weight: bold;
+    font-size: 18px;
+}

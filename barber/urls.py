@@ -7,6 +7,7 @@ from core import views
 
 urlpatterns = (
     [
+        path("", views.MainPageView.as_view(), name="main"),
         path("admin/", admin.site.urls),
         path("thanks/", views.ThanksView.as_view(), name="thanks"),
     ]
