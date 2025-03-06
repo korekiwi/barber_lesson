@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.views.generic import View, TemplateView
+from django.views.generic import View, TemplateView, CreateView
 
 from core.models import Master, Service, Visit
 from core.forms import VisitForm
@@ -11,8 +11,12 @@ MENU = [
     {'title': 'Запись на стрижку', 'url': '#orderForm', 'active': True},
 ]
 
-class MainPageView(TemplateView):
-    template_name = "main.html"
+class MainPageView(CreateView):
+    # template_name = "main.html"
+    # success_url = 'thanks'
+    # model = Visit
+    template_name = 'main.html'
+    form_class = VisitForm
     success_url = 'thanks'
     model = Visit
 
@@ -21,7 +25,6 @@ class MainPageView(TemplateView):
         context['menu'] = MENU
         context['masters'] = Master.objects.all()
         context['services'] = Service.objects.all()
-        context['form'] = VisitForm
         return context
 
 
