@@ -1,15 +1,17 @@
 {% extends 'base.html' %}
-{% load static %}
 
 {% block title %}Барбершоп "Арбуз"{% endblock %}
 
 {% block content %}
 
 <section class="hero_section">
-    <div class="hero_div">Добро пожаловать в барбершоп "Арбуз"!</div>
+    <div class="hero_div">Добро пожаловать в барбершоп "Арбуз"!
+
+        <img src="media/images/nav.png" alt="">
+    </div>
 </section>
 
-<section class="masters">
+<section id="masters" class="masters">
     <h3>Наши мастера:</h3>
     <div class="master_gallery">
         {% for master in masters %}
@@ -22,7 +24,7 @@
     </div>
 </section>
 
-<section class="services">
+<section id='services' class="services">
     <h3>Наши услуги:</h3>
     <div class="service_gallery">
         {% for service in services %}
@@ -35,7 +37,7 @@
     </div>
 </section>
 
-<section class="service_form">
+<section id='orderForm' class="service_form">
     <h3>Записаться на стрижку:</h3>
     <form action="" method="post">
         {% csrf_token %}

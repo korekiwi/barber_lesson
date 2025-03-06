@@ -12,9 +12,6 @@ MENU = [
 ]
 
 class MainPageView(CreateView):
-    # template_name = "main.html"
-    # success_url = 'thanks'
-    # model = Visit
     template_name = 'main.html'
     form_class = VisitForm
     success_url = 'thanks'
