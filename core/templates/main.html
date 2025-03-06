@@ -35,4 +35,17 @@
     </div>
 </section>
 
+<section class="service_form">
+    <h3>Записаться на стрижку:</h3>
+    <form action="" method="POST">
+        {% csrf_token %}
+        {% for field in form %}
+            {{field}}
+        {% endfor %}
+        <button type="submit">
+            Записаться
+        </button>
+    </form>
+</section>
+
 {% endblock content %}

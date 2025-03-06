@@ -13,6 +13,11 @@
     text-align: center;
 }
 
+.service_form {
+    margin: 70px 0px;
+    text-align: center;
+}
+
 .hero_div {
     padding: 100px 0px;
     text-align: center;
@@ -76,4 +81,25 @@
 .service_price {
     font-weight: bold;
     font-size: 18px;
+}
+
+.form_control {
+    width: 300px;
+    padding: 5px;
+    margin: 5px;
+}
+
+form {
+    padding: 20px;
+    border: 3px solid green;
+    border-radius: 10px;
+    margin: 10px auto;
+    width: 700px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+form button {
+    width: 300px;
 }
